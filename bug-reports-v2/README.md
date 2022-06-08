@@ -12,9 +12,8 @@ How is that **important**? Bug reporting helps smooth out Application, so that i
 <details open>
 <summary><b>(click to expand or hide)</b></summary>
 <!-- MarkdownTOC -->
-
-# 1. [Code Explanation and References](#code-and-references)
-# 2. [Google Cloud Platform Infrastructure](#gcp-infrastructure)
+1. [Code Explanation and References](#code-and-references)
+1. [Google Cloud Platform Infrastructure](#gcp-infrastructure)
   
 <!-- /MarkdownTOC -->
 </details>
