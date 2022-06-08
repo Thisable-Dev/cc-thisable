@@ -7,6 +7,7 @@ What is **Bug Report**? A bug report is a specific report that outlines informat
 
 How is that **important**? Bug reporting helps smooth out Application, so that it does what it needs to, without frustrating the people using it. Nobody wants to work with software that doesn’t behave as expected. It’s a terrible user experience. [References](https://bugherd.com/blog/bug-reporting/)
 
+In this project, I made Bug Reports API with RESTful API method and Authentication API Caller using Hapi-auth-jwt and jsonwebtoken.
 
 ## Table of Contents
 <details open>
@@ -21,7 +22,7 @@ How is that **important**? Bug reporting helps smooth out Application, so that i
 
 <a id="code-and-references"></a>
 # Code Explanation and References
-So let's just see into my package.json
+So, How to authenticate api calling? let's just see into my package.json first
 ```json
 {
   "name": "bug-reports-v2",
@@ -48,10 +49,11 @@ So let's just see into my package.json
   }
 }
 ```
-In code above, the depedencies I'm using is **Firestore**, **HapiJS**, **Firebase Admin**, **Hapi Auth JWT**, **jsonwebtoken**, and **nanoid**. I will explain one-by-one
+In code above, the depedencies I used are **Firestore**, **HapiJS**, **Firebase Admin**, **Hapi Auth JWT**, **jsonwebtoken**, and **nanoid**.
 
 ## 1. HapiJS
-Read the [full documentation](https://hapi.dev/tutorials/?lang=en_US)
+Read the [full documentation](https://hapi.dev/tutorials/?lang=en_US).
+
 Basically, I'm using HapiJS RESTful API to allow HTTP request/response to our server.
 ### Installation
 ```sh
@@ -59,8 +61,9 @@ npm install @Hapi/hapi
 ```
 
 ## 2. Firebase Admin
-Read the [full documentation](https://firebase.google.com/docs/admin/setup)
-I put it in handler.js
+Read the [full documentation](https://firebase.google.com/docs/admin/setup).
+
+I put the configuration connection in handler.js
 ```sh
 var admin = require("firebase-admin")
 admin.initializeApp({
@@ -69,7 +72,9 @@ admin.initializeApp({
 ```
 
 ## 3. Connect to Firestore Databse
-Read the [full documentation](https://cloud.google.com/firestore/docs/create-database-server-client-library#linux-or-macos)
+Read the [full documentation](https://cloud.google.com/firestore/docs/create-database-server-client-library#linux-or-macos).
+
+Connect with firestore database:
 ```sh
 const db = admin.firestore()
 ```
@@ -97,7 +102,7 @@ const db = admin.firestore()
 
 ## 4. Hapi Auth JWT
 Read the [full documentation](https://www.npmjs.com/package/hapi-auth-jwt2)
-We need to auth the API call, hence we need auth strategy for it
+I need to auth the API call, hence we create auth strategy for it
 ```sh
 npm i hapi-auth-jwt2
 ```
@@ -116,7 +121,21 @@ await server.register(hapiAuthJWT)
     })
     server.auth.default('jwt')
 ```
+
 ## 5. jsonwebtoken
+Read the [full documentation](npm i jsonwebtoken)
+```sh
+npm i jsonwebtoken
+```
+### Usage
+Setup your hapi.js server as described above (no special setup for using JWT tokens in urls)
+```sh
+https://yoursite.co/path?token=your.jsonwebtoken.here
+```
+
+## 6. NanoID
+Read the [full documentation](npm i nanoid)
+A tiny, secure, URL-friendly, unique string ID generator for JavaScript.
 
 <a id="gcp-infrastructure"></a>
 # Google Cloud Platform Infrastructure
