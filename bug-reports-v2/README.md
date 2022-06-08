@@ -66,36 +66,36 @@ Password:
 Type in your password and you are set!
 #### 2. Cloning production repo [Disclaimer: I'm using private repo, so this link below just for example]
 ```sh
-git clone https://github.com/Thisable-Dev/cc-thisable.git
+$ git clone https://github.com/Thisable-Dev/cc-thisable.git
 ```
 #### 3. Install NVM [Node Version Manager]
 ```sh
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
+$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
 ```
 #### 4. Match the local node version with bugreports-server-vm instance
 ```sh
-nvm install <NodeJS version>
+$ nvm install <NodeJS version>
 ```
 NodeJS version example: v14.17.0
 #### 5. Change directory to bugreports folder 
 ```sh
-cd bugreports
+$ cd bugreports
 ```
 #### 6. Install your application package
 ```sh
-npm install
+$ npm install
 ```
 #### 7. Run development/production stage
 ```sh
-npm run start-production
+$ npm run start-production
 ```
 #### 8. Install Process Manager (outside cd bugreports)
 ```sh
-npm install -g pm2
+$ npm install -g pm2
 ```
 #### 9. Start Production with Process Manager (inside cd bugreports)
 ```sh
-pm2 start npm --name "bugreport-auth-api" -- run "start-production"
+$ pm2 start npm --name "bugreport-auth-api" -- run "start-production"
 ```
 ---
 ### 2. Create Firewall rule to allow ingress connection to VM
