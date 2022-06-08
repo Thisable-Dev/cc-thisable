@@ -44,7 +44,7 @@ gcloud compute instances create bugreports-server-vm --project=devthisable --zon
 ```
 ---
 ### 1.1 Extras: Inside bugreports-server-vm instance SSH
-#### 0. Set local-time in SSH
+#### 1. Set local-time in SSH
 - You need to get the password of your OS Disk - for me it's Ubuntu 20 [References](https://stackoverflow.com/questions/70774352/is-there-any-solution-to-gain-access-of-the-password-of-user-account-in-vm-insta)
 ```sh
 $ sudo su
@@ -63,37 +63,37 @@ Authentication is required to manage system services or units.
 Authenticating as: alice
 Password: 
 ```
-And you are set!
-#### 1. Cloning production repo [Disclaimer: I'm using private repo, so this link below just for example]
+Type in your password and you are set!
+#### 2. Cloning production repo [Disclaimer: I'm using private repo, so this link below just for example]
 ```sh
 git clone https://github.com/Thisable-Dev/cc-thisable.git
 ```
-#### 2. Install NVM [Node Version Manager]
+#### 3. Install NVM [Node Version Manager]
 ```sh
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
 ```
-#### 3. Match the local node version with bugreports-server-vm instance
+#### 4. Match the local node version with bugreports-server-vm instance
 ```sh
 nvm install <NodeJS version>
 ```
 NodeJS version example: v14.17.0
-#### 4. Change directory to bugreports folder 
+#### 5. Change directory to bugreports folder 
 ```sh
 cd bugreports
 ```
-#### 5. Install your application package
+#### 6. Install your application package
 ```sh
 npm install
 ```
-#### 6. Run development/production stage
+#### 7. Run development/production stage
 ```sh
 npm run start-production
 ```
-#### 7. Install Process Manager (outside cd bugreports)
+#### 8. Install Process Manager (outside cd bugreports)
 ```sh
 npm install -g pm2
 ```
-#### 8. Start Production with Process Manager (inside cd bugreports)
+#### 9. Start Production with Process Manager (inside cd bugreports)
 ```sh
 pm2 start npm --name "bugreport-auth-api" -- run "start-production"
 ```
