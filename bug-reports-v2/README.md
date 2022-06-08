@@ -13,12 +13,21 @@ In this project, I made Bug Reports API with **RESTful API** method and Authenti
 <details open>
 <summary><b>(click to expand or hide)</b></summary>
 <!-- MarkdownTOC -->
-  
+
+1. [API Endpoints for Android](#api-endpoints)
 1. [Code Explanation and References](#code-and-references)
 1. [Google Cloud Platform Infrastructure](#gcp-infrastructure)
   
 <!-- /MarkdownTOC -->
 </details>
+
+<a id="code-and-references"></a>
+# API Endpoints for Android
+Send Data and Get Data
+```
+http://34.101.33.206:5000/report?token=<secret-token> [POST]
+http://34.101.33.206:5000/report?token=<secret-token> [GET]
+```
 
 <a id="code-and-references"></a>
 # Code Explanation and References
