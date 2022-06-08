@@ -27,7 +27,7 @@ How is that **important**? Bug reporting helps smooth out Application, so that i
 ### Installation
 Bug Reports API uses [GCE/VM Instances](https://cloud.google.com/compute/docs/instances) and [Firewall](https://cloud.google.com/vpc/docs/firewalls#firewall_rule_components) to run
 
-### Deploy VM Instance
+### 1. Deploy VM Instance
 ```sh
 gcloud compute instances create bugreports-server-vm --project=devthisable --zone=asia-southeast2-b \ 
 --machine-type=e2-micro \
@@ -43,7 +43,7 @@ gcloud compute instances create bugreports-server-vm --project=devthisable --zon
 --reservation-affinity=any
 ```
 
-### Extras: Inside bugreports-server-vm instance SSH
+### 1.1 Extras: Inside bugreports-server-vm instance SSH
 #### 0. Set local-time in SSH
 - You need to get the password of your OS Disk - for me it's Ubuntu 20 [References](https://stackoverflow.com/questions/70774352/is-there-any-solution-to-gain-access-of-the-password-of-user-account-in-vm-insta)
 ```sh
@@ -98,7 +98,7 @@ npm install -g pm2
 pm2 start npm --name "bugreport-auth-api" -- run "start-production"
 ```
 
-### Create Firewall rule to allow ingress connection to VM
+### 2. Create Firewall rule to allow ingress connection to VM
 ```sh
 gcloud compute --project=devthisable firewall-rules create bugreport-fw-allow-access \ 
 --description="this firewall is to allow public request to access the bug reports handler in the port 5000" \ 
