@@ -141,7 +141,7 @@ Setup your hapi.js server as described above (no special setup for using JWT tok
 ```sh
 https://yoursite.co/path?token=your.jsonwebtoken.here
 ```
-You need to check whether your signature valid or not in [jwt.io](https://jwt.io/)
+You need to check whether your token is valid signature or not in [jwt.io](https://jwt.io/)
 
 example of Valid Signature:
 ```sh
