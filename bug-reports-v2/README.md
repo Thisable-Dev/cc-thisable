@@ -42,7 +42,7 @@ gcloud compute instances create bugreports-server-vm --project=devthisable --zon
 --shielded-integrity-monitoring \
 --reservation-affinity=any
 ```
-
+---
 ### 1.1 Extras: Inside bugreports-server-vm instance SSH
 #### 0. Set local-time in SSH
 - You need to get the password of your OS Disk - for me it's Ubuntu 20 [References](https://stackoverflow.com/questions/70774352/is-there-any-solution-to-gain-access-of-the-password-of-user-account-in-vm-insta)
@@ -97,7 +97,7 @@ npm install -g pm2
 ```sh
 pm2 start npm --name "bugreport-auth-api" -- run "start-production"
 ```
-
+---
 ### 2. Create Firewall rule to allow ingress connection to VM
 ```sh
 gcloud compute --project=devthisable firewall-rules create bugreport-fw-allow-access \ 
