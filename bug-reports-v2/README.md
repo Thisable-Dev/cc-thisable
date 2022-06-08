@@ -139,8 +139,13 @@ example of Valid Signature:
 eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
 ```
 ## 6. NanoID
-Read the [full documentation](npm i nanoid)
-A tiny, secure, URL-friendly, unique string ID generator for JavaScript.
+Read the [full documentation](https://www.npmjs.com/package/nanoid).
+
+NanoID is a tiny, secure, URL-friendly, unique string ID generator for JavaScript.
+Installation
+```sh
+npm i nanoid
+```
 
 <a id="gcp-infrastructure"></a>
 # Google Cloud Platform Infrastructure
