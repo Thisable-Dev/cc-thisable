@@ -20,10 +20,10 @@ How is that **important**? Bug reporting helps smooth out Application, so that i
 </details>
 
 <a id="code-and-references"></a>
-## Code Explanation and References
+# Code Explanation and References
   
 <a id="gcp-infrastructure"></a>
-## Google Cloud Platform Infrastructure
+# Google Cloud Platform Infrastructure
 ### Installation
 Bug Reports API uses [GCE/VM Instances](https://cloud.google.com/compute/docs/instances) and [Firewall](https://cloud.google.com/vpc/docs/firewalls#firewall_rule_components) to run
 
