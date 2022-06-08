@@ -45,7 +45,7 @@ gcloud compute instances create bugreports-server-vm --project=devthisable --zon
 
 ### Extras: Inside bugreports-server-vm instance SSH
 #### 0. Set local-time in SSH
--You need to get the password of your OS Disk - for me it's Ubuntu 20 [References](https://stackoverflow.com/questions/70774352/is-there-any-solution-to-gain-access-of-the-password-of-user-account-in-vm-insta)
+- You need to get the password of your OS Disk - for me it's Ubuntu 20 [References](https://stackoverflow.com/questions/70774352/is-there-any-solution-to-gain-access-of-the-password-of-user-account-in-vm-insta)
 ```sh
 $ sudo su
 $ sudo passwd
