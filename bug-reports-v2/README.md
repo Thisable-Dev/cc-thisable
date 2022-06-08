@@ -21,7 +21,103 @@ How is that **important**? Bug reporting helps smooth out Application, so that i
 
 <a id="code-and-references"></a>
 # Code Explanation and References
-  
+So let's just see into my package.json
+```json
+{
+  "name": "bug-reports-v2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start-production": "NODE_ENV=production node ./src/server.js",
+    "start-development": "nodemon ./src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/firestore": "^5.0.2",
+    "@hapi/hapi": "^20.2.2",
+    "firebase-admin": "^10.2.0",
+    "hapi-auth-jwt2": "^10.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "nanoid": "^3.3.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
+```
+In code above, the depedencies I'm using is **Firestore**, **HapiJS**, **Firebase Admin**, **Hapi Auth JWT**, **jsonwebtoken**, and **nanoid**. I will explain one-by-one
+
+## 1. HapiJS
+Read the [full documentation](https://hapi.dev/tutorials/?lang=en_US)
+Basically, I'm using HapiJS RESTful API to allow HTTP request/response to our server.
+### Installation
+```sh
+npm install @Hapi/hapi
+```
+
+## 2. Firebase Admin
+Read the [full documentation](https://firebase.google.com/docs/admin/setup)
+I put it in handler.js
+```sh
+var admin = require("firebase-admin")
+admin.initializeApp({
+    credential: admin.credential.cert(serviceAccount)
+  })
+```
+
+## 3. Connect to Firestore Databse
+Read the [full documentation](https://cloud.google.com/firestore/docs/create-database-server-client-library#linux-or-macos)
+```sh
+const db = admin.firestore()
+```
+**How to add POST body request data to Firestore Database?** Add This Code Below (Depends on your code config)
+```
+ // Payload Data write to Firestore collection "bugreports" and generate new random ID
+    db.collection("bugreports").doc(ID_DocumentReport).set(newReport)
+    const CheckDatabase = db.collection("bugreports").doc(ID_DocumentReport)
+    if (CheckDatabase) {
+        const response = h.response({
+            status: 'success',
+            error: false,
+            message: 'Report is successfully added to Firestore',
+            date: createdAt,
+            data: {
+                reportId: ID_DocumentReport
+            }
+        })
+        response.code(201)
+        response.header("Authorization", request.headers.authorization)
+        response.type('application/json')
+        return response
+    }    
+```
+
+## 4. Hapi Auth JWT
+Read the [full documentation](https://www.npmjs.com/package/hapi-auth-jwt2)
+We need to auth the API call, hence we need auth strategy for it
+```sh
+npm i hapi-auth-jwt2
+```
+### You need to register plugin within HapiJS Framework
+```
+// Server Register Plugin
+await server.register(hapiAuthJWT)
+```
+### JWT Auth Plugin Strategy inside HapiJS Framework
+```
+ // JWT Auth Strategy (Param1: Strategy, Param2: Scheme, Param3: scheme requirements)
+    server.auth.strategy('jwt', 'jwt', {
+        key: secret,
+        validate,
+        verifyOptions: { ignoreExpiration: true }
+    })
+    server.auth.default('jwt')
+```
+## 5. jsonwebtoken
+
 <a id="gcp-infrastructure"></a>
 # Google Cloud Platform Infrastructure
 ### Installation
