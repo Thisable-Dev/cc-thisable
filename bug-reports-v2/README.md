@@ -132,7 +132,12 @@ Setup your hapi.js server as described above (no special setup for using JWT tok
 ```sh
 https://yoursite.co/path?token=your.jsonwebtoken.here
 ```
+You need to check whether your signature valid or not in [jwt.io](https://jwt.io/)
 
+example of Valid Signature:
+```sh
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
+```
 ## 6. NanoID
 Read the [full documentation](npm i nanoid)
 A tiny, secure, URL-friendly, unique string ID generator for JavaScript.
