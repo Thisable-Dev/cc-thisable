@@ -14,7 +14,7 @@ How is that **important**? Bug reporting helps smooth out Application, so that i
 <!-- MarkdownTOC -->
 
 # 1. [Code Explanation and References](#code-and-references)
-# 1. [Google Cloud Platform Infrastructure](#gcp-infrastructure)
+# 2. [Google Cloud Platform Infrastructure](#gcp-infrastructure)
   
 <!-- /MarkdownTOC -->
 </details>
