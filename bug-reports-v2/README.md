@@ -7,7 +7,7 @@ What is **Bug Report**? A bug report is a specific report that outlines informat
 
 How is that **important**? Bug reporting helps smooth out Application, so that it does what it needs to, without frustrating the people using it. Nobody wants to work with software that doesn’t behave as expected. It’s a terrible user experience. [References](https://bugherd.com/blog/bug-reporting/)
 
-In this project, I made Bug Reports API with RESTful API method and Authentication API Caller using Hapi-auth-jwt and jsonwebtoken.
+In this project, I made Bug Reports API with **RESTful API** method and Authentication API Caller using **Hapi-auth-jwt** and **jsonwebtoken**. Deploy the code to **VM Instance** and store the request body data json to **Firestore Database**
 
 ## Table of Contents
 <details open>
