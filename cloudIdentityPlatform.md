@@ -26,5 +26,36 @@ Identity Platform can help protect your app’s users and prevent account takeov
 
 ![Screen Shot 2022-06-11 at 22 36 57](https://user-images.githubusercontent.com/50565813/173196024-a13c3f0e-d401-49d2-a5c9-f5e1406f8455.png)
 
+<a id="add-provider"></a>
+# Add a Provider (Login Method)
+
+1. Go to **Identity Platform** page by accessing it through navigation menu or click [here](https://console.cloud.google.com/customer-identity/).
+2. Go to **Providers** menu and click **ADD A PROVIDER**.
+<img width="545" alt="Screen Shot 2022-06-12 at 05 57 31" src="https://user-images.githubusercontent.com/50565813/173207483-5ec2747b-3769-4024-875c-edad8ba17de7.png">
+4. Add the provider you want by choosing from the dropdown.
+<img width="566" alt="Screen Shot 2022-06-12 at 05 56 38" src="https://user-images.githubusercontent.com/50565813/173207461-cde7455f-fd4d-402b-8d58-8640d0fcf7c4.png">
+6. For Google SSO, you have to configure **Web Client ID** and **Web Client Secret** that can be creating through [APIs and Services page](https://console.cloud.google.com/apis/credentials).
+7. Press **save** button.
+
+## Connect to Android application
+
+In order to connect it to Android application, we have to use **Firebase** as the backend services for Android app. Usually, the Firebase project is automatically created if we already create Identity Platform through Google Cloud Platform. 
+
+1. Go to [Firebase console](https://console.firebase.google.com)
+2. Choose your project ID.
+<img width="664" alt="Screen Shot 2022-06-12 at 06 04 02" src="https://user-images.githubusercontent.com/50565813/173207672-4bf58441-2bb3-4a3c-bc3e-4846ffc6a090.png">
+4. To add application integration, press **Add app** button. Beforehand, you must input **Android package name**, **SHA-1 Fingerprint certificate**, and **application name**.
+<img width="359" alt="Screen Shot 2022-06-12 at 06 04 38" src="https://user-images.githubusercontent.com/50565813/173207682-cd7f1f60-19c4-44de-9b08-5ca32af8afc1.png">
+6. After the process finished, it will generated **google-services.json** automatically that will be deployed by Mobile Development later.
+
+**Remember**, that the file contain credentials informations, so keep it at the very safe place.
+
+
+
+
+
+
+
+
 
 
