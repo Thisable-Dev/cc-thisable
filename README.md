@@ -20,4 +20,4 @@ Cloud Identity Platform is a resource from Google Cloud Platform that is used to
 ## 3. Cloud Vision API
 Cloud Vision API is one of the APIs from Google Cloud Platform that is used to detect and predict a text in an image.
 
-### [Vision API documentation](https://github.com/Thisable-Dev/cc-thisable/blob/main/cloudIdentityPlatform.md)
+### [Vision API documentation](https://github.com/Thisable-Dev/cc-thisable/blob/main/cloudVisionAPI.md)
