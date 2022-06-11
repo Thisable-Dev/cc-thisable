@@ -15,9 +15,9 @@ A bug report is a specific report that outlines information about what is wrong 
 ## 2. Cloud Identity Platform
 Cloud Identity Platform is a resource from Google Cloud Platform that is used to accommodate Google SSO. Identity Platform must be integrated with Firebase to connect services with Android applications.
 
-### [Identity Platform documentation](https://github.com/Thisable-Dev/cc-thisable/blob/main/cloudIdentityPlatform.md)
+### [Identity Platform documentation](#)
 
 ## 3. Cloud Vision API
 Cloud Vision API is one of the APIs from Google Cloud Platform that is used to detect and predict a text in an image.
 
-### Vision API documentation
+### [Vision API documentation](https://github.com/Thisable-Dev/cc-thisable/blob/main/cloudIdentityPlatform.md)
