@@ -1,6 +1,6 @@
 # Thisable - Cloud Vision API Documentation
 
-What is **Cloud Vision API**? 
+What is **Cloud Vision API**? The Google Cloud Vision API allows developers to easily integrate vision detection features within applications, including image labeling, face and landmark detection, optical character recognition (OCR), and tagging of explicit content. [References](https://codelabs.developers.google.com/codelabs/cloud-vision-api-python#:~:text=The%20Google%20Cloud%20Vision%20API,the%20Vision%20API%20with%20Python.)
 
 ## Table of Content
 
