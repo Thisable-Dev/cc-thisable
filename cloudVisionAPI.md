@@ -20,10 +20,14 @@ What is **Cloud Vision API**? The Google Cloud Vision API allows developers to e
 1. Go to Google Cloud Platform.
 2. Navigate to Marketplace from navigation menu.
 3. Search **"Cloud Vision API"** in the search bar.
-4. Select the API and press **Enable Identity Platform**.
-<img width="529" alt="Screen Shot 2022-06-11 at 23 08 28" src="https://user-images.githubusercontent.com/50565813/173195714-d26b9d8f-e573-4353-966a-9564563be56a.png">
+4. Select the API and press **Enable Vision API**.
 
-<div align="center">Cloud Vision API on GCP marketplace.</div>
+
+<div align="center">
+  <img width="529" alt="Screen Shot 2022-06-11 at 23 08 28" src="https://user-images.githubusercontent.com/50565813/173195714-d26b9d8f-e573-4353-966a-9564563be56a.png">
+  <br>
+  <i>Cloud Vision API on GCP marketplace</i>
+</div>
 
 <a id="integrate-vision-api"></a>
 # Integrate with Android Application
