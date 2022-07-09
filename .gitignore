@@ -1,3 +1,4 @@
 # serviceAccountKey for Google Platform access
 *serviceAccountKey.json
 bug-reports-v2/src/auth/serviceAccountKey.json
+bug-reports-web-development/utils/auth/*.json

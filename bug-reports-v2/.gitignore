@@ -1,5 +1,6 @@
 node_modules
 *serviceAccountKey.json
+src/auth/*.json
 src/auth/
 src/auth/serviceAccountKey.json
 src/auth/secret-key-jwt.js
