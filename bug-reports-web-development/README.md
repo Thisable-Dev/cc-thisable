@@ -15,7 +15,6 @@ In this project, I made Bug Reports API with **RESTful API** method and Authenti
 <!-- MarkdownTOC -->
 
 1. [Cloud Architecture](#cloud-architecture)
-1. [API Endpoints for Android](#api-endpoints)
 1. [Code Explanation and References](#code-and-references)
 1. [Google Cloud Platform Infrastructure](#gcp-infrastructure)
   
