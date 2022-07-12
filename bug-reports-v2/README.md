@@ -14,6 +14,7 @@ In this project, I made Bug Reports API with **RESTful API** method and Authenti
 <summary><b>(click to expand or hide)</b></summary>
 <!-- MarkdownTOC -->
 
+1. [Cloud Architecture](#cloud-architecture)
 1. [API Endpoints for Android](#api-endpoints)
 1. [Code Explanation and References](#code-and-references)
 1. [Google Cloud Platform Infrastructure](#gcp-infrastructure)
@@ -21,7 +22,12 @@ In this project, I made Bug Reports API with **RESTful API** method and Authenti
 <!-- /MarkdownTOC -->
 </details>
 
-<a id="code-and-references"></a>
+<a id="cloud-architecture"></a>
+
+
+<a id="api-endpoints"></a>
+![Cloud Architecture](https://user-images.githubusercontent.com/57006944/178407865-c30909a3-2559-408f-85c0-bccf3b120efa.jpg)
+
 # API Endpoints for Android
 Send Data and Get Data
 ```
