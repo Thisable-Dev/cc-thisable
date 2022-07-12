@@ -22,12 +22,11 @@ In this project, I made Bug Reports API with **RESTful API** method and Authenti
 <!-- /MarkdownTOC -->
 </details>
 
+# Cloud Architecture
 <a id="cloud-architecture"></a>
-
-
-<a id="api-endpoints"></a>
 ![Cloud Architecture](https://user-images.githubusercontent.com/57006944/178407865-c30909a3-2559-408f-85c0-bccf3b120efa.jpg)
 
+<a id="api-endpoints"></a>
 # API Endpoints for Android
 Send Data and Get Data
 ```
